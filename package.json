@@ -1,0 +1,34 @@
+{
+  "name": "crud-mern",
+  "version": "1.0.0",
+  "description": "Notes - Crud Application with MERN Stack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmanueltabares/CRUD-MERN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmanueltabares/CRUD-MERN/issues"
+  },
+  "homepage": "https://github.com/emmanueltabares/CRUD-MERN#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "dotenv": "^16.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
