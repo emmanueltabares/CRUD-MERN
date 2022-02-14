@@ -23,7 +23,7 @@ class Note {
             }  
         }
 
-        res.json({ msg: notes})
+        res.json(notes)
     }
     async addNote(req, res){
         const {title, description} = req.body;
@@ -36,15 +36,20 @@ class Note {
         
     }
     async updateNote(req, res){
-        const {title, description} = req.body;
+        const {title, description} = req.body
         const {id} = req.params;
+
+        const data = {
+            title: title,
+            description: description
+        };
+
         try {
-            const note = await noteService.update(id, {title, description});
+            const note = await noteService.update(id, data);
             res.json({ msg: 'Note Updated', data: note})
         } catch (error) {
             console.error(error)
-        }
-        
+        } 
     }
     async delelteNote(req, res){
         const {id} = req.params;

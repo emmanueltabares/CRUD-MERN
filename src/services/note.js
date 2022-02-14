@@ -12,8 +12,9 @@ class Note {
         const note = new noteModel({title, description});
         return await note.save();
     }
-    async update(id, {data}){
-        return await noteModel.findByIdAndUpdate(id, data);
+    async update(id, data){
+        return await noteModel.findOneAndUpdate(id, data);
+        
     }
     async delete(id){
         await noteModel.findByIdAndRemove(id);
