@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import config from './config/config';
 
-const URI = config.DEV_DB;
+const URI = config.DB_NAME;
 
 (async () => {
     try {

@@ -95,7 +95,7 @@ class App extends Component {
         <nav className="light-blue darken-4">
           <div className="container">
             <a className="brand-logo" href="/">
-              MERN Stack
+              Notes App
             </a>
           </div>
         </nav>

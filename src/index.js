@@ -7,7 +7,7 @@ import { mongoose } from './db';
 
 const app = express();
 
-app.set('port', config.DEV_PORT || 8080);
+app.set('port', config.PORT);
 
 app.use(morgan('dev'));
 app.use(express.json());
